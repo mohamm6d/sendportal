@@ -12,6 +12,8 @@ use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 use RuntimeException;
 use Sendportal\Base\Facades\Sendportal;
+use Illuminate\Support\Facades\Schema;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -61,5 +63,7 @@ class AppServiceProvider extends ServiceProvider
         );
 
         Livewire::component('setup', Setup::class);
+        Schema::defaultStringLength(191);
+
     }
 }
