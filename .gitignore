@@ -14,5 +14,4 @@ npm-debug.log
 yarn-error.log
 .idea
 resources/lang/vendor/
-resources/views/vendor/
 composer.lock
